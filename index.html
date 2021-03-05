@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Frigoo</title>
+    <link rel="shortcut icon" type="img/png" href="favicon_io (1)/frigoo.png" />
+    <link rel="stylesheet" href="style.css" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=RocknRoll+One&family=Varela+Round&display=swap" rel="stylesheet">
+
+    <!-- animate on scroll -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!--  -->
+
+    <!-- Latest compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <script src="./anime.min.js"></script>
+    <nav
+      class="navbar navbar-expand  navbar-dark "
+    >
+
+      <ul class="navbar-nav">
+        <li class="nav-item"><a href="#" class="nav-link">login</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">signup</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">help</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">contact us</a></li>
+      </ul>
+      <button data-toggle="collapse" data-target="#demo" class="btn btn-light mod-button">&#9776</button>
+       <a href="#" class="nav-link mod-button link">frigoo</a></li>
+     
+    </nav>
+    <ul class="collapse" id="demo">
+      <a href="#" class="nav-link">login</a>
+      <a href="#" class="nav-link">signup</a>
+      <a href="#" class="nav-link">help</a>
+      <a href="#" class="nav-link">contact us</a>
+    </ul>
+    <section class="main_sec"  >
+      <div class="frame"></div>
+      <div><h1 class="heading">FRIGOO</h1></div>
+      <div class="con">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+      </div>
+      <div class="frame_2"></div>
+    </section>
+    <section class="main_sec"  >
+     <div class="main_sec__main" data-aos="fade-up">FRIGOO</div>
+     <div class="main_sec__main" data-aos="fade-down"> Simple. Secure.
+      Reliable messaging.</div>
+    </section>
+    <section class="footer" >
+      <div class="footer_div">2021 © FRIGOO </div>
+     </section>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        offset: 400,
+        duration: 1000,
+      });
+    </script>
+    <script>
+      anime({
+  targets: '.frame',
+  // direction: 'alternate',
+  rotate: '180deg',
+   loop: true,
+   duration: 3000,
+  easing: 'easeInOutSine'
+});
+
+anime({
+  targets: '.frame_2',
+  // direction: 'alternate',
+  rotate: '180deg',
+   loop: true,
+   duration: 3000,
+  easing: 'easeInOutSine'
+});
+
+function randomValues() {
+        anime({
+          targets: ".box",
+          translateX: function () {
+            return anime.random(0, 800);
+          },
+          scale: function () {
+            return anime.random(1, 2);
+          },
+
+          easing: "easeInOutQuad",
+          duration: 2500,
+          complete: randomValues,
+        });
+      }
+      randomValues();
+    </script>
+  </body>
+</html>
