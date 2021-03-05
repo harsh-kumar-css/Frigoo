@@ -3,6 +3,7 @@ body {
   overflow-x: hidden;
   padding: 0;
   width: 100%;
+  overflow-block: hidden;
 }
 .nav-item {
   margin: 0 2em;
@@ -116,11 +117,12 @@ ul#demo.collapse.show {
   align-items: center;
   flex-wrap: wrap;
   background-color: teal;
+  overflow-block: hidden;
   .heading {
     color: white;
     text-align: center;
     z-index: 100;
-    margin-bottom: 110%;
+    margin-bottom: 40%;
     margin-left: 25%;
     font-family: "RocknRoll One", sans-serif;
     font-family: "Varela Round", sans-serif;
