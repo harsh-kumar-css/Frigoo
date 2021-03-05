@@ -126,7 +126,7 @@ ul#demo.collapse.show {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   background-color: teal;
-  overflow-block: hidden;
+  overflow: hidden;
 }
 
 .main_sec .heading {
@@ -252,5 +252,23 @@ ul#demo.collapse.show {
   color: white;
   font-family: "RocknRoll One", sans-serif;
   font-family: "Varela Round", sans-serif;
+}
+
+@media screen and (max-width: 975px) {
+  .main_sec {
+    padding-bottom: 5em;
+  }
+  .main_sec .con {
+    display: none;
+  }
+  .main_sec .con .box {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .main_sec .heading {
+    font-size: 1.5em;
+  }
 }
 /*# sourceMappingURL=style.css.map */

@@ -117,7 +117,7 @@ ul#demo.collapse.show {
   align-items: center;
   flex-wrap: wrap;
   background-color: teal;
-  overflow-block: hidden;
+  overflow: hidden;
   .heading {
     color: white;
     text-align: center;
@@ -207,5 +207,26 @@ ul#demo.collapse.show {
     color: white;
     font-family: "RocknRoll One", sans-serif;
     font-family: "Varela Round", sans-serif;
+  }
+}
+
+@media screen and (max-width: 975px) {
+  .main_sec {
+    padding-bottom: 5em;
+
+    .con {
+      display: none;
+      .box {
+        display: none;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .main_sec {
+    .heading {
+      font-size: 1.5em;
+    }
   }
 }
