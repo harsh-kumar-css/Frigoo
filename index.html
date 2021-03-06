@@ -31,7 +31,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   </head>
   <body>
-    <script src="./anime.min.js"></script>
+    
     <nav
       class="navbar navbar-expand  navbar-dark "
     >
@@ -52,28 +52,10 @@
       <a href="#" class="nav-link">help</a>
       <a href="#" class="nav-link">contact us</a>
     </ul>
-    <section class="main_sec"  >
-      <div class="frame"></div>
-      <div><h1 class="heading">FRIGOO</h1></div>
-      <div class="con">
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-      </div>
-      <div class="frame_2"></div>
+    <section class="main_page">
+      <div class="type"><span class="name"></span></div>
     </section>
-    <section class="main_sec"  >
+    <section class="main_sec">
      <div class="main_sec__main" data-aos="fade-up">FRIGOO</div>
      <div class="main_sec__main" data-aos="fade-down"> Simple. Secure.
       Reliable messaging.</div>
@@ -89,41 +71,14 @@
         duration: 1000,
       });
     </script>
-    <script>
-      anime({
-  targets: '.frame',
-  // direction: 'alternate',
-  rotate: '180deg',
-   loop: true,
-   duration: 3000,
-  easing: 'easeInOutSine'
-});
-
-anime({
-  targets: '.frame_2',
-  // direction: 'alternate',
-  rotate: '180deg',
-   loop: true,
-   duration: 3000,
-  easing: 'easeInOutSine'
-});
-
-function randomValues() {
-        anime({
-          targets: ".box",
-          translateX: function () {
-            return anime.random(0, 600);
-          },
-          scale: function () {
-            return anime.random(1, 2);
-          },
-
-          easing: "easeInOutQuad",
-          duration: 2500,
-          complete: randomValues,
+      <script src="typed.js"></script>
+      <script>
+        var typed = new Typed(".name", {
+          strings: ["WELCOME","TO","FRIGOO"],
+          typeSpeed: 80,
+          backSpeed: 60,
+          // Default value
         });
-      }
-      randomValues();
-    </script>
+      </script>
   </body>
 </html>

@@ -2,8 +2,6 @@ body {
   margin: 0;
   overflow-x: hidden;
   padding: 0;
-  width: 100%;
-  overflow-block: hidden;
 }
 
 .nav-item {
@@ -27,13 +25,47 @@ nav .navbar-nav {
 }
 
 nav .link {
-  margin-left: 30%;
+  margin-left: 25%;
   color: white;
   font-weight: 700;
   font-size: 2.5em;
   letter-spacing: 0.2em;
   font-family: "RocknRoll One", sans-serif;
   font-family: "Varela Round", sans-serif;
+}
+
+.main_page {
+  height: 75vh;
+  background-color: teal;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+.main_page .type {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 60%;
+  height: 30%;
+  color: white;
+  font-family: "RocknRoll One", sans-serif;
+  font-family: "Varela Round", sans-serif;
+  font-size: 6em;
+  letter-spacing: 0.2em;
 }
 
 ul#demo.collapse.show {
@@ -77,6 +109,9 @@ ul#demo.collapse.show {
 @media screen and (max-width: 656px) {
   .main_sec {
     padding-bottom: 15em;
+  }
+  .main_page .type {
+    font-size: 2em;
   }
   nav .mod-button {
     display: block;
@@ -126,82 +161,6 @@ ul#demo.collapse.show {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   background-color: teal;
-  overflow: hidden;
-}
-
-.main_sec .heading {
-  color: white;
-  text-align: center;
-  z-index: 100;
-  margin-bottom: 40%;
-  margin-left: 25%;
-  font-family: "RocknRoll One", sans-serif;
-  font-family: "Varela Round", sans-serif;
-  font-size: 4em;
-  letter-spacing: 0.3em;
-  font-weight: 900;
-}
-
-.main_sec .con {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-
-.main_sec .con .box {
-  width: 50px;
-  height: 50px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  font-size: large;
-  font-weight: 900;
-  color: aliceblue;
-  margin: 5px 40px;
-  border: 3px solid rgba(255, 255, 255, 0.521);
-  -webkit-box-shadow: 10px 10px 20px rgba(32, 75, 75, 0.637);
-          box-shadow: 10px 10px 20px rgba(32, 75, 75, 0.637);
-  border-radius: 100px;
-}
-
-.main_sec .frame {
-  margin-right: -80%;
-  margin-top: -70%;
-  height: 80%;
-  width: 40%;
-  border: 20px solid rgba(255, 255, 255, 0.349);
-  border-radius: 20px;
-  -webkit-box-shadow: 10px 10px 20px rgba(32, 75, 75, 0.637);
-          box-shadow: 10px 10px 20px rgba(32, 75, 75, 0.637);
-}
-
-.main_sec .frame_2 {
-  margin-left: -80%;
-  margin-bottom: -20%;
-  height: 80%;
-  width: 40%;
-  border: 20px solid rgba(255, 255, 255, 0.349);
-  border-radius: 20px;
-  -webkit-box-shadow: 10px 10px 20px rgba(32, 75, 75, 0.637);
-          box-shadow: 10px 10px 20px rgba(32, 75, 75, 0.637);
 }
 
 .main_sec__main {
@@ -252,23 +211,5 @@ ul#demo.collapse.show {
   color: white;
   font-family: "RocknRoll One", sans-serif;
   font-family: "Varela Round", sans-serif;
-}
-
-@media screen and (max-width: 975px) {
-  .main_sec {
-    padding-bottom: 5em;
-  }
-  .main_sec .con {
-    display: none;
-  }
-  .main_sec .con .box {
-    display: none;
-  }
-}
-
-@media screen and (max-width: 450px) {
-  .main_sec .heading {
-    font-size: 1.5em;
-  }
 }
 /*# sourceMappingURL=style.css.map */
